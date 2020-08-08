@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  margin-left: 250px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+} /* Green */
+.button1:hover {
+background-color: #4CAF50;
+color: white;
+}
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+} /* Blue */
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #FF0000;
+} /* Red */
+.button3:hover{
+  background-color: #FF0000;
+  color: white
+}
+
+</style>
+</head>
+<body>
+
+
+<h1>The button element - Styled with CSS</h1>
+<p>Change the background color of a button with the background-color property:</p>
+
+<button class="button button1">Technology</button>
+<button class="button button2">Drugs</button>
+<button class="button button3">Other</button> 
+
+<button class = "button button3" onclick="myFunction()">Click Me</button>
+
+<div id="myDIV">
+This is my DIV.
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
