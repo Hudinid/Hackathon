@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<body style="Background-color:#404347">
 <style>
 .button {
   border: none;
@@ -9,65 +10,73 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px 2px;
   margin-left: 250px;
   cursor: pointer;
-  transition-duration: 0.5s;
+  transition-duration: 0.69s;
 }
 
 #DIVOther {
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0;
   text-align: left;
-  background-color: lightblue;
+  font-size: 17px;
+  background-color: #404347;
+  color: white;
   margin-top: 20px;
   display: none;
 }
 
 #DIVTech {
   width: 100%;
-  padding: 50px 0;
+  padding: 100px 0;
   text-align: left;
-  background-color: lightblue;
+  font-size: 17px;
+  background-color: #404347;
+  color: white;
   margin-top: 20px;
   display: none;
 }
 
 #DIVDrug {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 20;
   text-align: left;
-  background-color: lightblue;
+  font-size: 17px;
+  background-color: #404347;
+  color: white;
   margin-top: 20px;
   display: none;
 }
 
 .button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
+  background-color: #404347;
+  color: lightgreen;
+  border: 2px solid lightgreen;
 } /* Green */
 .button1:hover {
-background-color: #4CAF50;
+background-color: lightgreen;
 color: white;
 }
+
 .button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #008CBA;
+  background-color: #404347;
+  color: lightblue;
+  border: 2px solid lightblue;
 } /* Blue */
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
+.button2:hover{
+  background-color: lightblue;
+  color: white
 }
+
 .button3 {
-  background-color: white;
-  color: black;
-  border: 2px solid #FF0000;
+  background-color: #404347;
+  color: #e89e9e;
+  border: 2px solid #e89e9e;
 } /* Red */
 .button3:hover{
-  background-color: #FF0000;
+  background-color: #e89e9e;
   color: white
 }
 
@@ -91,7 +100,35 @@ This is for other stuff.
 </div>
 
 <div id="DIVTech">
-This is where content for Tech goes.
+While addictions related to technology are overshadowed by issues of substance abuse, its effects prove to be just as devastating, if not more so.
+Extreme technological addiction shares many similarities with its substance counterparts, including lying to your loved ones of your usage, problems at work,
+school, or home, and needing more and more gaming to relieve your stress. As technology is an essential part of our lives, quitting cold turkey may not be plausible, 
+but there are ways to take control of your usage. With this step-by-step program, you may look forward to a healthier, freer, and happier lifestyle.
+<br>
+<br>
+(1) ADMIT TO YOURSELF THÅT YOU HAVE A PROBLEM!!! While your peers may not see technological addiction as dangerous as substance abuse, these addictions are still 
+difficult to handle.
+<br>
+<br> 
+(2) Technological addictions are a double edged sword. While technology’s importance in daily life may lead to more opportunities to relapse, it also saves you the 
+hassle of quitting cold turkey, allowing you to ease into a reasonable time period of use. 
+<br>
+<br>
+(3) Start off slowly, reducing your technology time by small increments each day. Keep a timer to know when your time is up, so you don’t fall into your old habits 
+and overindulge. One should also seek alternative, healthy habits, like exercise, meditation, and reading. 
+<br>
+<br>
+(4)While professional help may not be necessary, it can certainly help. Benefits include therapy, counseling, and a plethora of empathetic and understanding minds 
+to talk to. You may also benefit from Cognitive Behavior Therapy(CBT), which helps you declutter your mind and have more productive thoughts.
+<br>
+<br>
+I hope you live a more bright and fulfilling life!
+<br>
+<br>
+References:
+
+(1)Ratini, Melinda. “Video Game Addiction: Symptoms, Treatment, and Prevention.” WebMD, WebMD, 19 Mar. 2019, 
+www.webmd.com/mental-health/addiction/video-game-addiction.
 </div>
 
 <div id="DIVDrug">
@@ -131,14 +168,7 @@ References:
 
 
 <script>
-function Start(){
-  var x = document.getElementById("DIVTech");
-  var y = document.getElementById("DIVDrug");
-  var z = document.getElementById("DIVOther");
-  x.style.display = "none";
-  y.style.display = "none";
-  z.style.display = "none";
-}
+
 
 function Other() {
   var x = document.getElementById("DIVTech");
@@ -179,9 +209,6 @@ function Drug() {
   }
 }
 
-
 </script>
-
-
-</body>
+</body >
 </html>
