@@ -59,7 +59,7 @@ color: white;
 } /* Blue */
 .button2:hover {
   background-color: #008CBA;
-  color: white;
+  color: black;
 }
 .button3 {
   background-color: black;
