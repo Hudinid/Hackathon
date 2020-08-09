@@ -61,6 +61,16 @@ div {
   margin-top: 30px;
   display: none;
 }
+#DIVIntro {
+  width: 100%;
+  padding: 50px;
+  text-align: left;
+  font-size: 17px;
+  background-color: #404347;
+  color: white;
+  margin-top: 30px;
+}
+
 
 #ptech1{
   margin-left:100px;
@@ -251,6 +261,7 @@ www.webmd.com/mental-health/addiction/video-game-addiction.
 </div>
 <!-- Article for Drugs -->
 <div id="DIVDrug">
+
 <p style="font-family:sans-serif; color:white; font-size: 17px;">
 Drug addiction is the most well known form, and its stigma can be cruel to those who suffer under this condition. What makes it especially complicated is that it not only affects one mentally, but 
 physiologically. However, drug addiction can happen to people of all walks of life, and anyone is capable of kicking it to the curb. With this step-by-step process, you will be on your way to a healthier,
@@ -288,6 +299,11 @@ References:
 </p>
 </div>
 
+<div id="DIVIntro">
+<p style="font-family:sans-serif; color:white; font-size: 24px;">
+Life can burden one with many problems, not the least being an addiction of some kind. They can come in many forms, but all of them can devastate one’s entire livelihood if not promptly dealt with. Generally, addictions can be classified into three categories: Substance, Technology, and Emotional. Dealing with addiction is never easy, but I hope our information will help you or a loved one pave their way to recovery!
+</p>
+</div>
 <!-- Images -->
 <img id="ptech1" src="techpic1.jpg" width="500" height="333" align ="left" class ="imgframe">
 <img id="ptech2" src="techpic2.jpg" width="500" height="333" align ="right" class ="imgframe">
@@ -302,10 +318,12 @@ References:
 
 <!-- Functions -->
 function Other() {
+  var w = document.getElementById("DIVIntro");
   var x = document.getElementById("DIVTech");
   var y = document.getElementById("DIVDrug");
   var z = document.getElementById("DIVOther");
   if (z.style.display === "none") {
+    w.style.display = "none";
     z.style.display = "block";
     y.style.display = "none";
     x.style.display = "none";
@@ -319,14 +337,17 @@ function Other() {
     z.style.display = "none";
 	pother1.style.display = "none";
 	pother2.style.display = "none";
+	w.style.display = "block";
   }
 }
 
 function Tech() {
+  var w = document.getElementById("DIVIntro");
   var x = document.getElementById("DIVTech");
   var y = document.getElementById("DIVDrug");
   var z = document.getElementById("DIVOther");
   if (x.style.display === "none") {
+    w.style.display = "none";
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "none";
@@ -340,14 +361,17 @@ function Tech() {
     x.style.display = "none";
 	ptech1.style.display = "none";
 	ptech2.style.display = "none";
+	w.style.display = "block";
   }
 }
 
 function Drug() {
+  var w = document.getElementById("DIVIntro");
   var x = document.getElementById("DIVTech");
   var y = document.getElementById("DIVDrug");
   var z = document.getElementById("DIVOther");
   if (y.style.display === "none") {
+    w.style.display = "none";
     x.style.display = "none";
     y.style.display = "block";
     z.style.display = "none";
@@ -361,9 +385,9 @@ function Drug() {
     y.style.display = "none";
 	pdrug1.style.display = "none";
 	pdrug2.style.display = "none";
+	w.style.display = "block";
   }
 }
 
 </script>
 </body >
-
