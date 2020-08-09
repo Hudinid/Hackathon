@@ -17,39 +17,81 @@
   transition-duration: 0.69s;
 }
 
+.imgframe {
+    background:#404347;
+    padding:5px;
+    border:0; 
+}
+
+div {
+  max-width: 1375px;
+  min-width: 400px;
+  background-color:#404347;
+}
+
 #DIVOther {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px;
   text-align: left;
   font-size: 17px;
   background-color: #404347;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
   display: none;
 }
 
 #DIVTech {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px;
   text-align: left;
   font-size: 17px;
   background-color: #404347;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
   display: none;
 }
 
 #DIVDrug {
   width: 100%;
-  padding: 50px 0;
+  padding: 50px;
   text-align: left;
   font-size: 17px;
   background-color: #404347;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
   display: none;
 }
 
+#ptech1{
+  margin-left:100px;
+  display: none;
+  padding: 50px;
+  }
+#ptech2{
+  margin-right:100px;
+  display:none;
+  padding: 50px;
+  }
+#pdrug1{
+  margin-left:100px;
+  display:none;
+  padding: 50px;
+}
+#pdrug2{
+  margin-right:100px;
+  display:none;
+  padding: 50px;
+}
+#pother1{
+  margin-left:100px;
+  display:none;
+  padding: 50px;
+}
+#pother2{
+  margin-right:100px;
+  display:none;
+  padding: 50px;
+}
 .button1 {
   background-color: #404347;
   color: lightgreen;
@@ -86,7 +128,7 @@ color: white;
 
 
 <h1 style="color:white;">
-<p style="font-family:sans-serif; color:white; font-size: 30px;">Dealing With Addictions from Alcohol to Zolpidem</h1>
+<p style="font-family:sans-serif; color:white; font-size: 30px;">Dealing With Addictions</h1>
 <p style="color:white;"><p style="font-family:sans-serif; color:white; font-size: 17px;">
 DISCLAIMER: THIS SITE IS NOT A SUBSTITUTE FOR PROFESSIONAL HELP! THIS IS MEANT TO SIMPLY SUPPLEMENT AN ALREADY 
 ESTABLISHED TREATMENT PLAN. Please select what type of addiction you're trying to deal with. </p>
@@ -96,8 +138,7 @@ ESTABLISHED TREATMENT PLAN. Please select what type of addiction you're trying t
 <button class="button button3" onclick = "Other()">Other</button> 
 
 
-
-
+<!-- Article for Emotion -->
 <div id="DIVOther">
 <p style="font-family:sans-serif; color:white; font-size: 17px;">
 Emotional issues such as self-harm, anorexia, and violent tendencies may not fit neatly into any one category, but all of them stem from its perverse addictive nature they impose on
@@ -130,6 +171,10 @@ If you feel suicidal, call the National Suicide Prevention Hotline (1-800-273-82
 <br>
 <br>
 References:
+
+
+(1)“Helpful vs Harmful: Ways to Manage Emotions.” Mental Health America, www.mhanational.org/helpful-vs-harmful-ways-manage-emotions. 
+=======
 
 (1)“Helpful vs Harmful: Ways to Manage Emotions.” Mental Health America, www.mhanational.org/helpful-vs-harmful-ways-manage-emotions. 
 </p>
@@ -167,9 +212,44 @@ References:
 
 (1)Ratini, Melinda. “Video Game Addiction: Symptoms, Treatment, and Prevention.” WebMD, WebMD, 19 Mar. 2019, 
 www.webmd.com/mental-health/addiction/video-game-addiction.
+
 </p>
 </div>
+<!-- Article for Technology -->
+<div id="DIVTech">
+<p style="font-family:sans-serif; color:white; font-size: 17px;">
+While addictions related to technology are overshadowed by issues of substance abuse, its effects prove to be just as devastating, if not more so.
+Extreme technological addiction shares many similarities with its substance counterparts, including lying to your loved ones of your usage, problems at work,
+school, or home, and needing more and more gaming to relieve your stress. As technology is an essential part of our lives, quitting cold turkey may not be plausible, 
+but there are ways to take control of your usage. With this step-by-step program, you may look forward to a healthier, freer, and happier lifestyle.
+<br>
+<br>
+(1) ADMIT TO YOURSELF THÅT YOU HAVE A PROBLEM!!! While your peers may not see technological addiction as dangerous as substance abuse, these addictions are still 
+difficult to handle.
+<br>
+<br> 
+(2) Technological addictions are a double edged sword. While technology’s importance in daily life may lead to more opportunities to relapse, it also saves you the 
+hassle of quitting cold turkey, allowing you to ease into a reasonable time period of use. 
+<br>
+<br>
+(3) Start off slowly, reducing your technology time by small increments each day. Keep a timer to know when your time is up, so you don’t fall into your old habits 
+and overindulge. One should also seek alternative, healthy habits, like exercise, meditation, and reading. 
+<br>
+<br>
+(4)While professional help may not be necessary, it can certainly help. Benefits include therapy, counseling, and a plethora of empathetic and understanding minds 
+to talk to. You may also benefit from Cognitive Behavior Therapy(CBT), which helps you declutter your mind and have more productive thoughts.
+<br>
+<br>
+I hope you live a more bright and fulfilling life!
+<br>
+<br>
+References:
 
+(1)Ratini, Melinda. “Video Game Addiction: Symptoms, Treatment, and Prevention.” WebMD, WebMD, 19 Mar. 2019, 
+www.webmd.com/mental-health/addiction/video-game-addiction.
+</p>
+</div>
+<!-- Article for Drugs -->
 <div id="DIVDrug">
 <p style="font-family:sans-serif; color:white; font-size: 17px;">
 Drug addiction is the most well known form, and its stigma can be cruel to those who suffer under this condition. What makes it especially complicated is that it not only affects one mentally, but 
@@ -208,10 +288,19 @@ References:
 </p>
 </div>
 
+<!-- Images -->
+<img id="ptech1" src="techpic1.jpg" width="500" height="333" align ="left" class ="imgframe">
+<img id="ptech2" src="techpic2.jpg" width="500" height="333" align ="right" class ="imgframe">
+
+<img id="pdrug1" src="drugpic1.jpg" width="500" height="333" align ="left" class ="imgframe">
+<img id="pdrug2" src="drugpic2.jpg" width="500" height="333" align ="right" class ="imgframe">
+
+<img id="pother1" src="otherpic1.jpg" width="500" height="333" align ="left" class ="imgframe">
+<img id="pother2" src="otherpic2.jpg" width="500" height="333" align ="right" class ="imgframe">
 
 <script>
 
-
+<!-- Functions -->
 function Other() {
   var x = document.getElementById("DIVTech");
   var y = document.getElementById("DIVDrug");
@@ -220,8 +309,16 @@ function Other() {
     z.style.display = "block";
     y.style.display = "none";
     x.style.display = "none";
+	ptech1.style.display = "none";
+	ptech2.style.display = "none";
+	pdrug1.style.display = "none";
+	pdrug2.style.display = "none";
+	pother1.style.display = "block";
+	pother2.style.display = "block";
   } else {
     z.style.display = "none";
+	pother1.style.display = "none";
+	pother2.style.display = "none";
   }
 }
 
@@ -233,8 +330,16 @@ function Tech() {
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "none";
+	ptech1.style.display = "block";
+	ptech2.style.display = "block";
+	pdrug1.style.display = "none";
+	pdrug2.style.display = "none";
+	pother1.style.display = "none";
+	pother2.style.display = "none";
   } else {
     x.style.display = "none";
+	ptech1.style.display = "none";
+	ptech2.style.display = "none";
   }
 }
 
@@ -246,11 +351,19 @@ function Drug() {
     x.style.display = "none";
     y.style.display = "block";
     z.style.display = "none";
+	ptech1.style.display = "none";
+	ptech2.style.display = "none";
+	pdrug1.style.display = "block";
+	pdrug2.style.display = "block";
+	pother1.style.display = "none";
+	pother2.style.display = "none";
   } else {
     y.style.display = "none";
+	pdrug1.style.display = "none";
+	pdrug2.style.display = "none";
   }
 }
 
 </script>
 </body >
-</html>
+
